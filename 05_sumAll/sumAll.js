@@ -10,12 +10,13 @@ const sumAll = function(start, end) {
         end = tmp;
     }
 
-    let sum = 0;
-    for (let i = start; i <= end; i++){
-        sum = sum + i;
-    }
-    return sum;
+    let startSum = GaussFormula(start);
+    let endSum = GaussFormula(end);
+    return endSum - startSum + start;
 };
 
+function GaussFormula(num){
+    return num * (num + 1) / 2;
+}
 // Do not edit below this line
 module.exports = sumAll;
