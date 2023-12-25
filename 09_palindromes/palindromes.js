@@ -12,6 +12,9 @@ const palindromes = function (words) {
     }
     return true;
 
+
+    // let string = words.toLowerCase().replace(/[^a-z0-9]/g, "");
+    // return string.split("").reverse().join("") == string;
 };
 
 function reAdjustLeftSide(words, left){
